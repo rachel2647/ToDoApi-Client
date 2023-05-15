@@ -1,6 +1,10 @@
 import axios from 'axios';
 
+<<<<<<< HEAD
 const instance = axios.create({ baseURL: "http://localhost:5201" });
+=======
+const instance = axios.defaults.baseURL(process.env.REACT_APP_HOST)
+>>>>>>> 0b756b1 (env-commit)
 
 instance.interceptors.response.use(
   response => response,
