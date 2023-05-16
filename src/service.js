@@ -1,6 +1,9 @@
 import axios from 'axios';
 
-const instance=axios.create({baseURL:process.env.REACT_APP_API_KEY})
+
+const instance = axios.create({ baseURL: process.env.RAECT_APP_API })
+
+console.log('process.env.RAECT_APP_API_KEY', process.env.RAECT_APP_API)
 
 instance.interceptors.response.use(
   response => response,
